@@ -1,11 +1,6 @@
 header{
-    background-color: blue;
- }
- img{
-   padding: 2%;
-   margin: 2%;
-   border: 2%;
- }
+   background-color: rgb(64, 95, 233);
+}
  header h1{
     position: relative;
     padding: 4%;
@@ -13,6 +8,7 @@ header{
     border: 4%;
     align-items: center;
     justify-content: center;
+    text-align: center;
  }
  .h1{
     position: relative;
@@ -21,28 +17,54 @@ header{
     margin: 10%;
     padding: 4%;
  }
- button{
-    position: relative;
- }
- footer{
-    background-color: rgb(200, 66, 66);
- }
- footer p{
-    position: center;
-    padding: 5%;
-    margin: 0%;
-    border: 19%;
-    align-items: center;
-    justify-content: center;
- }
- content p {
+
+
+ #footer {
+background-color: #383848;
+text-align: center;
 color: #fff;
-margin: 20px 0 40px;
+padding: 15px 0;
+font-size: 14px;
 }
-.button {
-display: inline-block;
-padding: 15px 30px;
-border: none;
-border-radius: 15px;
+
+/* Footer End */
+
+/* Responsiveness */
+/* Medium Screen + Tablet */
+main {
+padding: 10px;
+margin: 20px;
+.banner-card {
+position: relative; 
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.banner-text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+}
+.banner-text h1 {
+color: white;
+font-size: 30px;
+}
+button {
+background-color: blue;
 cursor: pointer;
+color: white;
+padding: 15px 25px;
+border: none;
+font-size: 15px;
+border-radius: 10px;
+transition: 0.3s;
+}
+button:hover {
+background-color: darkblue;
+transform: scale(1.1);
 }
