@@ -7,12 +7,13 @@
     <link rel="style.css" href="./style.css">
     <style>
      header{
-        background-color: blue;
+        background-color: rgb(64, 95, 233);
      }
      img{
        padding: 2%;
        margin: 2%;
        border: 2%;
+       text-align: center;
      }
      header h1{
         position: relative;
@@ -21,6 +22,7 @@
         border: 4%;
         align-items: center;
         justify-content: center;
+        text-align: center;
      }
      .h1{
         position: relative;
@@ -29,20 +31,139 @@
         margin: 10%;
         padding: 4%;
      }
-     button{
+     #div{
         position: relative;
+        background-color: #383848;
+	text-align: center;
+	color: #fff;
+	padding: 15px 0;
+	font-size: 14px;
      }
-     footer{
-        background-color: rgb(200, 66, 66);
-     }
-     footer p{
-        position: center;
-        padding: 5%;
-        margin: 0%;
-        border: 19%;
-        align-items: center;
-        justify-content: center;
-     }
+     .btn {
+	display: inline-block;
+	padding: 15px 30px;
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+     #footer {
+	background-color: #383848;
+	text-align: center;
+	color: #fff;
+	padding: 15px 0;
+	font-size: 14px;
+}
+
+/* Footer End */
+
+/* Responsiveness */
+/* Medium Screen + Tablet */
+@media (max-width: 1000px) {
+	#navbar img {
+		margin-left: 20px;
+	}
+
+	nav ul {
+		margin-right: 20px;
+	}
+
+	nav ul li a {
+		padding: 10px;
+	}
+
+	header .content h1 {
+		font-size: 28px;
+	}
+
+	#about {
+		height: auto;
+		padding: 4rem 2rem;
+	}
+
+	#about .tab_content p {
+		margin-right: 2rem;
+	}
+
+	#about img {
+		width: 250px;
+	}
+
+	#offers .offers-items img {
+		width: 150px;
+	}
+
+	#offers .offers-items h3 {
+		font-size: 18px;
+	}
+
+	#menu .menu-items {
+		display: block;
+	}
+
+	#contact .contact-content {
+		flex-direction: column;
+	}
+
+	/* Mobile Devices */
+	@media (max-width: 600px) {
+		#navbar {
+			flex-direction: column;
+		}
+
+		#navbar img {
+			margin-bottom: 20px;
+		}
+
+		header .content h1 {
+			font-size: 18px;
+		}
+
+		header .content p {
+			font-size: 14px;
+		}
+
+		#about .tab_content {
+			flex-direction: column;
+		}
+
+		#about .tab_content a {
+			margin: 2rem 0;
+		}
+
+		#about img {
+			display: none;
+		}
+
+		#offers {
+			height: auto;
+			padding: 30px 10px;
+		}
+
+		#offers .offers-items {
+			flex-direction: column;
+		}
+
+		#menu .menu-items .menu-item {
+			margin: 20px 10px;
+		}
+
+		#daytime .daytime-items {
+			display: block;
+			height: auto;
+			padding: 30px 0;
+		}
+
+		#daytime .daytime-items .daytime-item {
+			margin-top: 20px;
+		}
+
+		#contact .contact-info,
+		form {
+			width: 80%;
+		}
+	}
+}
      content p {
 	color: #fff;
 	margin: 20px 0 40px;
@@ -61,15 +182,23 @@
    <header>
     <h1> Home services contact</h1>
    </header>
-   <div class="content">
+   <div id="content">
     <img src="C:\wamp64\www\projet\img1.jpg" alt="vehiculre" class="tab_content_img>"
-    <div>
+    <div class="btn__group">
         <p>Leader dans la formation</p>
-        <button class="commencer">commencer</button>
+        <button style="
+			display: inline-block;
+			padding: 15px 30px;
+			border: none;
+			border-radius: 15px;
+			cursor: pointer;
+			"
+	 class="commencer">commencer</button>
      </div>
    </div>
-    <footer>
-        <p>copyrith@2025, tout droit reserver</p>
-    </footer>
+   <footer id="footer">
+      <p>Copyright &copy; 2024 All rights reserved | made by <b> <a href="https://Xmat.ax " target="_blank">
+            Xmat.ax</a> </b></p>
+    </footer>  
 </body>
 </html>
