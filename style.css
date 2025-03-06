@@ -1,0 +1,48 @@
+header{
+    background-color: blue;
+ }
+ img{
+   padding: 2%;
+   margin: 2%;
+   border: 2%;
+ }
+ header h1{
+    position: relative;
+    padding: 4%;
+    margin: 0%;
+    border: 4%;
+    align-items: center;
+    justify-content: center;
+ }
+ .h1{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    padding: 4%;
+ }
+ button{
+    position: relative;
+ }
+ footer{
+    background-color: rgb(200, 66, 66);
+ }
+ footer p{
+    position: center;
+    padding: 5%;
+    margin: 0%;
+    border: 19%;
+    align-items: center;
+    justify-content: center;
+ }
+ content p {
+color: #fff;
+margin: 20px 0 40px;
+}
+.button {
+display: inline-block;
+padding: 15px 30px;
+border: none;
+border-radius: 15px;
+cursor: pointer;
+}
